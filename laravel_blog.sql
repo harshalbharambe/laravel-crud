@@ -48,7 +48,7 @@ CREATE TABLE `posts` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `author` bigint(20) DEFAULT NULL,
-  `description` varchar(200) DEFAULT NULL
+  `description` LONGTEXT DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
